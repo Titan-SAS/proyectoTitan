@@ -57,7 +57,13 @@ import { InvestmentsSolutionsComponent } from './components/common/investments-s
 import { VideoComponent } from './components/common/video/video.component';
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
-
+import { ServicesElectricityComponent } from './components/pages/services-electricity/services-electricity.component';
+import { ServicesTelecommunicationsComponent } from './components/pages/services-telecommunications/services-telecommunications.component';
+import { ServicesIndustrialMaintenanceComponent } from './components/pages/services-industrial-maintenance/services-industrial-maintenance.component';
+import { ServicesEquipmentMaintenanceComponent } from './components/pages/services-equipment-maintenance/services-equipment-maintenance.component';
+import { FeaturedProjectsComponent } from './components/pages/featured-projects/featured-projects.component';
+import { CustomersComponent } from './components/pages/customers/customers.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -114,13 +120,20 @@ import { TermsConditionsPageComponent } from './components/pages/terms-condition
         VideoComponent,
         PrivacyPolicyPageComponent,
         TermsConditionsPageComponent,
+        ServicesTelecommunicationsComponent,
+        ServicesIndustrialMaintenanceComponent,
+        ServicesEquipmentMaintenanceComponent,
+        FeaturedProjectsComponent,
+        CustomersComponent,
+        ContactComponent
     ],
     imports: [
         BrowserModule,
         CarouselModule,
         AppRoutingModule,
         NgxScrollTopModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        ServicesElectricityComponent
     ],
     providers: [],
     bootstrap: [AppComponent]
