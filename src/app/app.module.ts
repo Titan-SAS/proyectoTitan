@@ -132,8 +132,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
         CarouselModule,
         AppRoutingModule,
         NgxScrollTopModule,
-        BrowserAnimationsModule,
-        ServicesElectricityComponent
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

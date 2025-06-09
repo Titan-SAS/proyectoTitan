@@ -7,6 +7,7 @@ module.exports = {
         fontFamily: {
             'serif': ['Outfit', 'sans-serif'],
             'sans': ['DM Sans', 'sans-serif'],
+            "2-times": ['"2-times new roman"', 'serif'],
         },
         extend: {},
         screens: {
