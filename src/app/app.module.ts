@@ -38,30 +38,20 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { TeamComponent } from './components/common/team/team.component';
 import { AboutComponent } from './components/common/about/about.component';
-import { ServicesPageComponent } from './components/pages/services-page/services-page.component';
 import { ServicesComponent } from './components/common/services/services.component';
-import { ServiceDetailsPageComponent } from './components/pages/service-details-page/service-details-page.component';
-import { SdpFeaturesComponent } from './components/pages/service-details-page/sdp-features/sdp-features.component';
-import { SdpSimplifyComponent } from './components/pages/service-details-page/sdp-simplify/sdp-simplify.component';
 import { GetStartedComponent } from './components/common/get-started/get-started.component';
-import { TeamPageComponent } from './components/pages/team-page/team-page.component';
-import { BoardOfDirectorsComponent } from './components/pages/team-page/board-of-directors/board-of-directors.component';
-import { LeadershipTeamComponent } from './components/pages/team-page/leadership-team/leadership-team.component';
 import { PricingComponent } from './components/common/pricing/pricing.component';
 import { InvestmentBenefitsComponent } from './components/common/investment-benefits/investment-benefits.component';
-import { FaqComponent } from './components/common/faq/faq.component';
-import { InvestmentFundsPageComponent } from './components/pages/investment-funds-page/investment-funds-page.component';
+import { FaqComponent } from './components/common/faq/faq.component'
 import { InvestmentFundsComponent } from './components/common/investment-funds/investment-funds.component';
 import { StartInvestComponent } from './components/common/start-invest/start-invest.component';
 import { InvestmentsSolutionsComponent } from './components/common/investments-solutions/investments-solutions.component';
 import { VideoComponent } from './components/common/video/video.component';
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
-import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ServicesElectricityComponent } from './components/pages/services-electricity/services-electricity.component';
 import { ServicesTelecommunicationsComponent } from './components/pages/services-telecommunications/services-telecommunications.component';
 import { ServicesElectronicArticlesComponent } from './components/pages/services-electronic-articles/services-electronic-articles.component';
 import { OthersServicesComponent } from './components/pages/others-services/others-services.component';
-import { FeaturedProjectsComponent } from './components/pages/featured-projects/featured-projects.component';
 import { CustomersComponent } from './components/pages/customers/customers.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 
@@ -101,30 +91,20 @@ import { ContactComponent } from './components/pages/contact/contact.component';
         AboutPageComponent,
         TeamComponent,
         AboutComponent,
-        ServicesPageComponent,
         ServicesComponent,
-        ServiceDetailsPageComponent,
-        SdpFeaturesComponent,
-        SdpSimplifyComponent,
         GetStartedComponent,
-        TeamPageComponent,
-        BoardOfDirectorsComponent,
-        LeadershipTeamComponent,
         PricingComponent,
         InvestmentBenefitsComponent,
         FaqComponent,
-        InvestmentFundsPageComponent,
         InvestmentFundsComponent,
         StartInvestComponent,
         InvestmentsSolutionsComponent,
         VideoComponent,
         PrivacyPolicyPageComponent,
-        TermsConditionsPageComponent,
         ServicesTelecommunicationsComponent,
         ServicesElectricityComponent,
         ServicesElectronicArticlesComponent,
         OthersServicesComponent,
-        FeaturedProjectsComponent,
         CustomersComponent,
         ContactComponent
     ],
