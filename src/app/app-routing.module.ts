@@ -11,8 +11,8 @@ import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-pa
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ServicesElectricityComponent } from './components/pages/services-electricity/services-electricity.component';
 import { ServicesTelecommunicationsComponent } from './components/pages/services-telecommunications/services-telecommunications.component';
-import { ServicesIndustrialMaintenanceComponent } from './components/pages/services-industrial-maintenance/services-industrial-maintenance.component';
-import { ServicesEquipmentMaintenanceComponent } from './components/pages/services-equipment-maintenance/services-equipment-maintenance.component';
+import { ServicesElectronicArticlesComponent } from './components/pages/services-electronic-articles/services-electronic-articles.component';
+import { OthersServicesComponent } from './components/pages/others-services/others-services.component';
 import { FeaturedProjectsComponent } from './components/pages/featured-projects/featured-projects.component';
 import { CustomersComponent } from './components/pages/customers/customers.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
@@ -28,8 +28,8 @@ const routes: Routes = [
     {path: 'terms-conditions', component: TermsConditionsPageComponent},
     {path: 'services-electricity', component: ServicesElectricityComponent},
     {path: 'services-telecommunications', component: ServicesTelecommunicationsComponent},
-    {path: 'services-industrial-maintenance', component: ServicesIndustrialMaintenanceComponent},
-    {path: 'services-equipment-maintenance', component: ServicesEquipmentMaintenanceComponent},
+    {path: 'services-electronic-articles', component: ServicesElectronicArticlesComponent},
+    {path: 'others-services', component: OthersServicesComponent},
     {path: 'featured-projects', component: FeaturedProjectsComponent},
     {path: 'customers', component: CustomersComponent},
     {path: 'contact', component: ContactComponent},
