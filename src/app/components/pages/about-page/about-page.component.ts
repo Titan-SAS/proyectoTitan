@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutPageComponent {
 
-    title = 'Grupo empresarial titán';
+    title = 'Grupo empresarial Titán';
 
     constructor(private titleService:Title) {}
     
