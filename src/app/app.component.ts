@@ -18,7 +18,7 @@ declare let $: any;
 })
 export class AppComponent {
 
-    title = 'Titan';
+    title = 'Grupo empresarial Titán';
     
     location: any;
     routerSubscription: any;
