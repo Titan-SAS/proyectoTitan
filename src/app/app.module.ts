@@ -25,7 +25,6 @@ import { SimplifyStyleTwoComponent } from './components/common/simplify/simplify
 import { SolutionsStyleOneComponent } from './components/common/our-solutions/solutions-style-one/solutions-style-one.component';
 import { SolutionsStyleTwoComponent } from './components/common/our-solutions/solutions-style-two/solutions-style-two.component';
 import { FunfactsComponent } from './components/common/funfacts/funfacts.component';
-import { MissionVisionStyleOneComponent } from './components/common/mission-vision/mission-vision-style-one/mission-vision-style-one.component';
 import { MissionVisionStyleTwoComponent } from './components/common/mission-vision/mission-vision-style-two/mission-vision-style-two.component';
 import { WhyChooseStyleOneComponent } from './components/common/why-choose-us/why-choose-style-one/why-choose-style-one.component';
 import { WhyChooseStyleTwoComponent } from './components/common/why-choose-us/why-choose-style-two/why-choose-style-two.component';
@@ -33,7 +32,6 @@ import { PartnerComponent } from './components/common/partner/partner.component'
 import { BlogComponent } from './components/common/blog/blog.component';
 import { TestimonialsStyleThreeComponent } from './components/common/testimonials/testimonials-style-three/testimonials-style-three.component';
 import { SimplifyStyleThreeComponent } from './components/common/simplify/simplify-style-three/simplify-style-three.component';
-import { MissionVisionStyleThreeComponent } from './components/common/mission-vision/mission-vision-style-three/mission-vision-style-three.component';
 import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { TeamComponent } from './components/common/team/team.component';
@@ -78,7 +76,6 @@ import { ContactComponent } from './components/pages/contact/contact.component';
         SolutionsStyleOneComponent,
         SolutionsStyleTwoComponent,
         FunfactsComponent,
-        MissionVisionStyleOneComponent,
         MissionVisionStyleTwoComponent,
         WhyChooseStyleOneComponent,
         WhyChooseStyleTwoComponent,
@@ -86,7 +83,6 @@ import { ContactComponent } from './components/pages/contact/contact.component';
         BlogComponent,
         TestimonialsStyleThreeComponent,
         SimplifyStyleThreeComponent,
-        MissionVisionStyleThreeComponent,
         NavbarComponent,
         AboutPageComponent,
         TeamComponent,
