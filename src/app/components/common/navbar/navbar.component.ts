@@ -17,6 +17,10 @@ export class NavbarComponent {
         this.classApplied = !this.classApplied;
     }
 
+    closeMenu() {
+        this.classApplied = false;
+    }
+
     sidebarClassApplied = false;
     sidebarToggleClass() {
         this.sidebarClassApplied = !this.sidebarClassApplied;

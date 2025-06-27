@@ -13,7 +13,7 @@ export class HomeoneBannerComponent {
 		nav: false,
 		margin: 25,
 		loop: true,
-		dots: true,
+		dots: false,
 		autoplay: true,
 		autoplayHoverPause: true,
 		navText: [

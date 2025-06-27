@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ServicesElectricityComponent {
 
-  Title = 'Servicios Electricos - Titan';
+  Title = 'Titan - Servicios de electricos';
 
   constructor(private titleService: Title) {}
 

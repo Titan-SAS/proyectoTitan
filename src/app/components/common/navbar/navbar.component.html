@@ -21,7 +21,8 @@
                     <img
                         src="assets/images/logoTITAN-pequeno.png"
                         class="inline"
-                        alt="logo"
+                        alt="logo" width="150"
+                        height="10"
                     />
                     <!-- Black Navbar -->
                 </a>
@@ -33,11 +34,13 @@
                     <img
                         src="assets/images/logoTITAN-pequeno.png"
                         class="inline"
-                        alt="logo"
+                        alt="logo" width="150"
+                        height="10"
                     />
                     <!-- White Navbar -->
                 </a>
             </div>
+
             <button
                 class="navbar-toggler absolute ml-auto right-0 top-[4px] xl:hidden"
                 type="button"
@@ -50,6 +53,7 @@
                     <i class="ri-menu-line"></i>
                 </span>
             </button>
+
             <div class="navbar-collapse flex self-center grow basis-auto">
                 <ul
                     class="navbar-nav self-center flex-row ml-auto hidden xl:flex"
@@ -63,8 +67,7 @@
                             class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
+                            (click)="closeMenu()"
                         >
                             Home
                         </a>
@@ -79,8 +82,7 @@
                             class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
+                            (click)="closeMenu()"
                         >
                             Acerca de nosotros
                         </a>
@@ -109,8 +111,7 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Servicios eléctricos
                                 </a>
@@ -121,8 +122,7 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Servicios telecomunicaciones
                                 </a>
@@ -133,10 +133,9 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
-                                    Servicio de artículos electrónicos
+                                    Venta de productos electricos
                                 </a>
                             </li>
                             <li class="py-[7px] px-[22px]">
@@ -145,32 +144,13 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Otros
                                 </a>
                             </li>
-                            
                         </ul>
                     </li>
-
-                    <!-- <li
-                        class="xl:mx-[10px] 2xl:mx-[18px] py-[10px] lg:py-[15px] xl:py-[35px] 2xl:py-[41.5px] relative group last:mr-0 first:ml-0"
-                    >
-                        <a
-                            routerLink="/featured-projects"
-                            class="text-black text-[14px] font-medium transition-all hover:text-[#51869a] font-serif font-serif"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
-                            [ngClass]="{
-                                'text-white hover:text-white':
-                                    router.url === '/index-3'
-                            }"
-                        >
-                            Proyectos destacados
-                        </a>
-                    </li> -->
 
                     <li
                         class="xl:mx-[10px] 2xl:mx-[18px] py-[10px] lg:py-[15px] xl:py-[35px] 2xl:py-[41.5px] relative group last:mr-0 first:ml-0"
@@ -184,6 +164,7 @@
                                 'text-white hover:text-white':
                                     router.url === '/index-3'
                             }"
+                            (click)="closeMenu()"
                         >
                             Nuestros clientes
                         </a>
@@ -202,11 +183,47 @@
                                 'text-white hover:text-white':
                                     router.url === '/index-3'
                             }"
+                            (click)="closeMenu()"
                         >
                             Contáctanos
                         </a>
                     </li>
+
+                    <div
+                        class="mt-[15px] ml-[5px] md:mt-0 md:text-right self-center"
+                    >
+                        <ul class="flex">
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/grupoempresarialtitan?igsh=Z2ozYnd3djZ1Nnp5&utm_source=qr"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[0] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/grupo-empresarial-tit%C3%A1n-127192368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[6px] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://wa.me/573103080377?text=Hola%2C%20quisiera%20m%C3%A1s%20info"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[6px] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-whatsapp-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
+
                 <ul class="navbar-nav xl:hidden">
                     <li
                         class="xl:mx-[10px] 2xl:mx-[18px] py-[10px] lg:py-[15px] xl:py-[35px] 2xl:py-[41.5px] relative group last:mr-0 first:ml-0"
@@ -217,8 +234,7 @@
                             class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
+                            (click)="closeMenu()"
                         >
                             Home
                         </a>
@@ -233,8 +249,7 @@
                             class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
+                            (click)="closeMenu()"
                         >
                             Acerca de nosotros
                         </a>
@@ -263,8 +278,7 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Servicios eléctricos
                                 </a>
@@ -275,8 +289,7 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Servicios telecomunicaciones
                                 </a>
@@ -287,10 +300,9 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
-                                    Servicio de artículos electrónicos
+                                    Venta de productos electricos
                                 </a>
                             </li>
                             <li class="py-[7px] px-[22px]">
@@ -299,47 +311,25 @@
                                     class="block font-medium text-[15px] text-black transition-all hover:text-[#51869a] font-serif"
                                     routerLinkActive="active"
                                     [routerLinkActiveOptions]="{ exact: true }"
-                                    routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{ exact: true }"
+                                    (click)="closeMenu()"
                                 >
                                     Otros
                                 </a>
                             </li>
-                            
                         </ul>
                     </li>
-
-                    <!-- <li
-                        class="xl:mx-[10px] 2xl:mx-[18px] py-[10px] lg:py-[15px] xl:py-[35px] 2xl:py-[41.5px] relative group last:mr-0 first:ml-0"
-                    >
-                        <a
-                            routerLink="/*"
-                            class="text-black text-[14px] font-medium transition-all hover:text-[#51869a] font-serif"
-                            routerLinkActive="active"
-                            [routerLinkActiveOptions]="{ exact: true }"
-                            [ngClass]="{
-                                'text-white hover:text-white':
-                                    router.url === '/index-3'
-                            }"
-                        >
-                            Proyectos destacados
-                        </a>
-                    </li> -->
 
                     <li
                         class="xl:mx-[10px] 2xl:mx-[18px] py-[10px] lg:py-[15px] xl:py-[35px] 2xl:py-[41.5px] relative group last:mr-0 first:ml-0"
                     >
                         <a
-                            routerLink="/**"
+                            routerLink="/customers"
                             class="text-black text-[14px] font-medium transition-all hover:text-[#51869a] font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            [ngClass]="{
-                                'text-white hover:text-white':
-                                    router.url === '/index-3'
-                            }"
+                            (click)="closeMenu()"
                         >
-                            Clientes
+                            Nuestros clientes
                         </a>
                     </li>
 
@@ -348,49 +338,49 @@
                         [ngClass]="{ '2xl:py-[32px]': router.url === '/' }"
                     >
                         <a
-                            routerLink="/***"
+                            routerLink="/contact"
                             class="text-black text-[14px] font-medium transition-all hover:text-[#51869a] font-serif"
                             routerLinkActive="active"
                             [routerLinkActiveOptions]="{ exact: true }"
-                            [ngClass]="{
-                                'text-white hover:text-white':
-                                    router.url === '/index-3'
-                            }"
+                            (click)="closeMenu()"
                         >
                             Contáctanos
                         </a>
                     </li>
+
+                    <div class="mt-[15px] ml-[0px] md:mt-0 md:text-right self-center">
+                        <ul class="flex">
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/grupoempresarialtitan?igsh=Z2ozYnd3djZ1Nnp5&utm_source=qr"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[0] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/grupo-empresarial-tit%C3%A1n-127192368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[20px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[6px] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://wa.me/573103080377?text=Hola%2C%20quisiera%20m%C3%A1s%20info"
+                                    target="_blank"
+                                    class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[25px] first:ml-[6px] transition-all hover:text-[#51869a] font-2-times"
+                                >
+                                    <i class="ri-whatsapp-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
             </div>
-
-                <div class="mt-[15px] ml-[35px] md:mt-0 md:text-right self-center">
-                    <a
-                        href="https://www.instagram.com/grupoempresarialtitan?igsh=Z2ozYnd3djZ1Nnp5&utm_source=qr"
-                        target="_blank"
-                        class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[12px] first:ml-[0] transition-all hover:text-[#51869a] font-2-times"
-                    >
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/grupo-empresarial-tit%C3%A1n-127192368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank"
-                        class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[12px] first:ml-[0] transition-all hover:text-[#51869a] font-2-times"
-                    >
-                        <i class="ri-linkedin-fill"></i>
-                    </a>
-
-
-                    <!-- WhatsApp -->
-                    <a
-                        href="https://wa.me/573016235089?text=Hola%2C%20quisiera%20m%C3%A1s%20info"
-                        target="_blank"
-                        class="inline-block leading-[1] text-[#343456] text-[18px] md:text-[20px] lg:text-[22px] ml-[12px] first:ml-[0] transition-all hover:text-[#51869a] font-2-times"
-                    >
-                        <i class="ri-whatsapp-fill"></i>
-                    </a>
-
-                    
-                </div>
         </nav>
     </div>
 </div>

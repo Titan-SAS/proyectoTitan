@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeDemoOneComponent {
 
-    title = 'Titan';
+    title = 'Grupo empresarial Titán';
 
     constructor(private titleService:Title) {}
     

@@ -401,6 +401,14 @@
                 };
             }
         }
+
+        .navbar {
+
+            img{
+                @apply max-w-[150px];
+                @apply h-[50px];
+            }
+        }
     }
 
 }

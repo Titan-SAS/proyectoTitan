@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class PrivacyPolicyPageComponent {
 
-    title = 'Privacy Policy - Tartu';
+    title = 'Titan - Politica de privacidad';
 
     constructor(private titleService:Title) {}
     
